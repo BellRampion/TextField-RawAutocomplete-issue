@@ -28,7 +28,7 @@ class ErrorPageState extends State<ErrorPage>{
   @override
   void initState(){
     super.initState();
-    textEditingController.text = initialStr;
+    //textEditingController.text = initialStr;
 
     if (initialStr.length == 17){
       all17Icon = Icon(Icons.check, color: Colors.green);
