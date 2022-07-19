@@ -1,6 +1,6 @@
 # sample_project
 
-A new Flutter project.
+Shows error with RawAutocomplete. 
 
 ## Getting Started
 
