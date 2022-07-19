@@ -9,7 +9,7 @@ class ErrorPage extends StatefulWidget {
       : super(key: key);
       
         @override
-        State<StatefulWidget> createState() => ErrorPageState(initialStr: "some text");
+        State<StatefulWidget> createState() => ErrorPageState(initialStr: "");
 
 }
 
@@ -28,7 +28,6 @@ class ErrorPageState extends State<ErrorPage>{
   @override
   void initState(){
     super.initState();
-    _options.add(initialStr);
     textEditingController.text = initialStr;
 
     if (initialStr.length == 17){
@@ -61,15 +60,13 @@ class ErrorPageState extends State<ErrorPage>{
                   FocusNode focusNode,
                   VoidCallback onFieldSubmitted
                 ){
-                  return BFInputAndImage(
+                  return TextFormField(
                     focusNode: focusNode,
-                    textController: controller,
-                    imagePath: "assets/images/MakeIcons/0.png",
-                    hintText: "Sample",
-                    outline: true,
+                    controller: controller,
                     maxLength: 17,
-                    label: "Textbox example",
-                    suffixIcon: all17Icon,
+                    decoration: InputDecoration(
+                      suffixIcon: all17Icon,
+                    ),
                     onChanged: (String value){ 
                       onFieldSubmitted();
 
