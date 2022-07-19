@@ -32,9 +32,6 @@ dependencies:
   lint: ^1.5.3
   location: ^4.3.0
   matcher: ^0.12.10
-  path_provider: ^2.0.2
-  permission_handler: ^8.1.2
-  provider: ^6.0.1
   sticky_and_expandable_list: ^1.0.2
 
 dev_dependencies:
@@ -65,9 +62,7 @@ flutter:
   generate: true
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/images/VehicleStockImages/
     - assets/images/
-    - assets/images/MakeIcons/
     - assets/
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
